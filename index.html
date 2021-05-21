@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svetozar Brborić</title>
+
+    <!-- Ukljucivanje JQuery biblioteke -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Ukljucivanje Bootstrap-a za izgled aplikacije -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color: brown">
+        <nav class="navbar navbar-expand-lg">
+            <div style="display: inline-flex;">
+                <!-- <button id="homeButton" style="color: black;4" >Home</button> -->
+                <a onclick="clickOnHome()" id="homeButton" href="#" class="nav-link" style="color: black;">
+                    Home
+                </a>
+                <a onclick="clickOnAboutMe()" id="about-me" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                    About me
+                </a>
+                <a onclick="clickOnSkills()" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                    Skills
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <div style="height: 100%;">
+        <div id="home" style="background-image: url('jefferson-santos-9SoCnyQmkzI-unsplash.jpg'); 
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            image-rendering: pixelated;"> 
+            <h3 style="padding: 5%; color: white; text-align: justify;">
+                Hi, my name is Svetozar Brborić and this is my website. I am a software developer student at The Faculty of Technical Sciences in Novi Sad.
+            </h3>
+        </div>
+        <div id="aboutme" class="aboutMeBackground1 style" style="display: none; background-color: #E2E1E1; padding-top: 15px;">
+            <div class="container-fluid">
+                <div align-self="stretch" class="row text-center">
+                    <div class="text_style col-lg-6 col-12">
+                        <div class="d1">
+                            <div>
+                                <!-- <input type="image" src="img/moja-slika.jpg" width="250" height="250" class="img-thumbnail rounded-circle m1" alt=""> -->
+                                <img src="moja-slika.jpg" width="250" height="250" class="img-thumbnail rounded-circle m1">
+                            </div>
+                            <h4 style="color: black; padding-top: 55px;">Svetozar Brborić</h4>
+                            <p style="padding: 5%; color: black;  text-align: justify;">I enrolled at the Faculty of Technical Sciences in 2018. While studying I developed various desktop and web applications. I think I made the right choice, because since then  I've been learning new things and it gives me a chance to meet new and interesting people with whom I can exchange experience, learn from and even work with!</p>
+                        </div>
+                    </div>
+                    <div class="text_style col-lg-6 col-12">
+                        <div class="d2">
+                            <div>
+                                <img src="ftnpic.jpg" width="400" height="400" class="img-thumbnail m3">
+                            </div>
+                            <a id="linkuni" href="http://www.ftn.uns.ac.rs/1089714234/softverske-i-informacione-tehnologije--novi-sad-" target="_blank" class="link">
+                                <h4> Faculty Of Technical Sciences, Department of Software and information technology </h4>
+                            </a>
+                            <p style="padding: 5%; color: black;  text-align: justify;"> I am always looking to improve my current skills, learn new ones and that is the reason I am looking for an internship. I think that many things can be learned on your own, especially in this field, but I also think that by working with other people one can improve their skills much faster and bring them to another level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" style="display: none; background-color: #E2E1E1;
+           
+            padding-top: 25px;">
+            <div class="container-fluid">
+                <div align-self="stretch" class="row text-center">
+                    <div class="text_style col-lg-6 col-12">
+                        <div class="d1">
+                            <div>
+                                <h3>Skills</h3>
+                                <!-- <h6>---------------------------------------</h6> -->
+                            </div>
+                            <div style="padding: 30px; padding-left: 150px; text-align: left;">
+                                <h5>MySQL<img src="mysql.png" width="50" height="50" style="padding-left: 15px;"/></h5>
+                                <h5 style="padding-top: 20px;">Java(Spring Boot)  <img src="java2.png" width="50" height="50"/><img src="spring.png" width="50" height="50"/></h5>
+                                <h5 style="padding-top: 20px;">JavaScript<img style="padding-left: 10px;" src="pngjoy.com_javascript-logo-svg-javascript-hd-png-download_1712250.png" width="30" height="20"/></h5>
+                                <h5 style="padding-top: 20px;">HTML/CSS<img style="padding-left: 15px;" src="html-css.png" width="100" height="50"/></h5>
+                                <h5 style="padding-top: 20px;">C#<img style="padding-left: 10px;" src="pngwing.com.png" width="35" height="35"/></h5>
+                                <h5 style="padding-top: 20px;">Android studio<img src="android.png" width="50" height="50"/><img src="androidstudio.png" width="50" height="50"/></h5>
+                                <h5 style="padding-top: 20px;">Angular<img style="padding-left: 15px;" src="Angular_full_color_logo.svg.png" width="65" height="50"/></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_style col-lg-6 col-12">
+                        <div class="d2">
+                            <div>
+                                <h3>Some projects</h3>
+                                <!-- <h6>---------------------------------------</h6> -->
+                            </div>
+                                <div class="project">
+                                    <h4 style="display: inline-flex; text-align: justify;"><a href="https://github.com/bijelic99/Projekat-OSA-2019-2020.git" target="_blank" class="gitlinks">Email client - Spring Boot</a>
+                                        <div class="images">
+                                            <img src="eclipse.png" width="35" height="35" class="m3">
+                                            <img src="spring.png" width="35" height="35" class="m3">
+                                            <img src="mysql.png" width="35" height="35" class="m3">
+                                        </div>
+                                    </h4>
+                                </div>
+                                <p style="width: 90%; text-align: justify; padding-left: 5%;">This project is relies on Spring technology on backend and Android on frontend. Our application is utilizes Java Mail API (for sending/receiving emails and for communicating with email servers) which was integrated in Spring environment, also we used Hibernate ORM to communicate and persist data to MySQL database.</p>
+                                <div class="project">
+                                    <h4 style="display: inline-flex; text-align: justify;"><a href="https://github.com/bijelic99/Projekat-PMSU-2019-2020.git" target="_blank" class="gitlinks">Email client - Android Studio</a>
+                                        <div class="images">
+                                            <img src="android.png" width="35" height="35" class="m3">
+                                            <img src="androidstudio.png" width="35" height="35" class="m3">
+                                            <img src="java2.png" width="35" height="35" class="m3">
+                                        </div>
+                                    </h4>
+                                </div>
+                                <p style="width: 90%; text-align: justify; padding-left: 5%;">This project is frontend for our Email Client app. Connection between two projects was realized using Retrofit3 library. The purpose of this project was to give the user access to all of his emails, across all his accounts in one place (Gmail, Yahoo or any other), as well as to enable him to send, sort or even group emails to custom folders.
+
+                                </p>
+                                <div class="project">
+                                    <h4 style="display: inline-flex; text-align: justify;"><a href="https://github.com/Svetozar99/PoslovnaIformatikaProjekat.git" target="_blank" class="gitlinks">Warehouse Management - Spring Boot</a>
+                                        <div class="images">
+                                            <img src="spring.png" width="35" height="35" class="m3">
+                                            <img src="eclipse.png" width="35" height="35" class="m3">
+                                            <img src="java2.png" width="35" height="35" class="m3">
+                                            <img src="pngjoy.com_javascript-logo-svg-javascript-hd-png-download_1712250.png" width="20" height="20" class="m3">
+                                        </div>
+                                    </h4>
+                                </div>
+                                <p style="width: 90%; text-align: justify; padding-left: 5%;">This is an application that helps us when transferring goods from one warehouse to another. Keeps records of all purchases and shipments of goods from all warehouses of a company.
+                                </p>
+                                <div class="project">
+                                    <h4 style="display: inline-flex; text-align: justify;"><a href="https://github.com/Svetozar99/ProjekatEObrazovanjeFTN.git" target="_blank" class="gitlinks">Student services - Spring Boot</a>
+                                        <div class="images">
+                                            <img src="spring.png" width="35" height="35" class="m3">
+                                            <img src="eclipse.png" width="35" height="35" class="m3">
+                                            <img src="java2.png" width="35" height="35" class="m3">
+                                            <img src="Angular_full_color_logo.svg.png" width="35" height="35" class="m3">
+                                        </div>
+                                    </h4>
+                                </div>
+                                <p style="width: 90%; text-align: justify; padding-left: 5%;">This project is intended for students and professors to keep records of their subjects. It allows the student to register for the exam, allows payments to the account, taking the exam, etc. Professors can grade students, schedule exams, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: brown; padding: 5px;">
+        <div id="contact">
+            <div class="contacts container">
+                <div id="red" class="row">
+                    <div class="col-lg-3 col-12">
+                        <img src="gmail-512.png" width="35" height="35" class="m3">
+                        <a href="mailto:svetozarbrboric@gmail.com"> svetozarbrboric@gmail.com </a>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE10lEQVR4nO2bTYgcRRTHf1mHYVmWoOAheJAlglkWCYoeNMQoHlQwCGoOHnRBIojgISJePURFgnoKag56EBMQNBIlfiJq/EZEYg5B4kf2kMOiYVljXNdhdsvD62ZrO9W9/eprJuofiumpfvXq1X/evK5+VbXOGEMApoAHgGuBMWCkqK9+ltf2dxeq95cr12XpAWeBY8AB4HOt4SXWeRLQBZ4CdrH2oHLgELATmNM29CGgC7wJ3KpsdxT4puH+CNAp9E8AW5T6jwPXoyXBGKMte4weS8aYDYo+Rowxv3n0c1A7Hq0HXAr8iPxKWtwGfLKGTOkFk8ARz36uA75uK9xRKt+Bn1EAb7M6qNUhNKbsJCEBlynlq8gRMCc1wloC1jvqTgAfAWeARWCJlcdVmz4vqJGrI8uu3wpsq9xXeaiWgFFH3cPAO0o9sbAe+L1SpxqT1iVd7J5V6oiJnqNONSYtAS52+0odqZGUAJf8f56ANo+2nPifgGTCNRgkAcF9x/CA8xq5PWBjC5kJTztKZI8B2vb3NNzfSjuSokE7EwzFT8DdwB5gM/J22QFmgU+RmeajgX2oxpSbgGngEeDCSv3lyJy+j0xtn8hlUM4YsAt4GckJ7HbcfwN4Bngc2Bu571rkIuAK4OniehH40yHTt+ofAm4PN60FlCmkjx1pqKkW7V7ySG8daaG342j3s2ZMuWLAHPCqsk0fiVHadw2VV6cioAvcCHwHnAZeAzYU/ZV9tjF0BFlv2AZ8iSRdoiIVAQeQ/OEvwCYk+KlSVQUuAg4CNyFp9atiGVgi1dT25uJzI/LL+/YzhngSyLyhmpEaiqeAC3bmKMTLOqxeZmtaOvNCKgJsw9qsCbbRU+qKihwEuL5r9CR93U5FwLClyWqRiwDfX7Ef0LYVUhGwUPnuO4ge7tR3NKQi4AVk0IeBU4TFgH3F9X7OJTYcCd8Fxq3r7z3eBZYsHbauaqnipGZMKXN8oStG5VaYGLpqkSvJ+atHmzna/f+DgmQuAu4C7kASHiVmgXuLYq/nv17IX53DsFwEnEE2Mr1bqdtflBmr/gskO3Qqh2HDmOfPOonKTcCidW0PtFdTnxy5CTgOzBfXR636r4rPPpI6D4EqKOZOi88jSY3NwAdW/T5k4PPAtzkNikGA1otmWB30SnwYbIkHYvwFBh1Ig/oftPEDx7+RANVTREuAK8IOksTgGBbD+NxPEhvBW3ZieMAgCRgKD3Btn82F6jK7GloGXR7wJLIAssBKDq8MRD45PftHqa4LdKwyCtzS0sZaxCDgmqIMC7LHgGFDUgLOh3x/UgKSpqgjIWkMWGy4twy8heT/epYhy8hq8ZSl40VWNkCUga6DnES7pJCbBd5DEqL9QqYLXAxsx312AbReqkyLP9eQxn6/od2UJfdYg9y0JXdng9yzDXZ8ljItfrLh3iSyy7N6WnQU2eBQoinXZ5/5uwGZY3QrZYzmM4UnGu6dC6UHTBhj/m5g3xhj/jLG/FEUl+x0g/7ta+hugy0N+oM9YAZ4fg2ZUWC8KK4jNpsa2o4r7aniELKXqDVyHp0tsYCkwl3RegcS5HzwA3J09rSmUcjh6b3A/QxHTuEwcB/KwYM/ASWuBB5EdoKOsfJIs7fF2I/aWDtTe8jCyjHgFWSjtRf+AU65GgpStOc6AAAAAElFTkSuQmCC" width="35" height="35" class="m3">
+                        <a href="tel:+381644094513"> +381 644094513 </a>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <img src="GitHub-logo.png" width="35" height="35" class="m3">
+                        <a href="https://github.com/Svetozar99" target="_blank"> /Svetozar99 </a>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <img src="data:image/png;base64,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" width="35" height="35" class="m3">
+                        <a href="https://www.linkedin.com/in/svetozar-brbori%C4%87-7476871b5" target="_blank"> /Svetozar Brborić </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
